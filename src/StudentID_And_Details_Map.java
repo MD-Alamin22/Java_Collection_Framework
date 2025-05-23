@@ -50,9 +50,9 @@ public class StudentID_And_Details_Map {
 
         // Display all student details (sorted by ID)
         System.out.println("\nStudent Records (sorted by ID):");
-        for (Map.Entry<Integer, Student> entry : studentMap.entrySet()) {
+        for (Map.Entry<Integer, Student> entry : studentMap.entrySet())
             System.out.println("ID: " + entry.getKey() + " -> " + entry.getValue());
-        }
+
 
         scanner.close();
     }

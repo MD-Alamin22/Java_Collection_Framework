@@ -26,9 +26,9 @@ public class EmployeeDepartmentMap {
 
         // Display all mappings
         System.out.println("\nEmployee ID to Department Mappings:");
-        for (Map.Entry<Integer, String> entry : employeeMap.entrySet()) {
+        for (Map.Entry<Integer, String> entry : employeeMap.entrySet())
             System.out.println("Employee ID: " + entry.getKey() + " -> Department: " + entry.getValue());
-        }
+
 
         scanner.close();
     }

@@ -3,9 +3,9 @@ import java.util.Collections;
 
 public class Kth_Smallest_Element_ArrayList {
     public static int findKthSmallest(ArrayList<Integer> list, int k) {
-        if (k <= 0 || k > list.size()) {
+        if (k <= 0 || k > list.size())
             throw new IllegalArgumentException("Invalid value of k: " + k);
-        }
+
 
         // Sort the ArrayList
         Collections.sort(list);
@@ -21,10 +21,10 @@ public class Kth_Smallest_Element_ArrayList {
         System.out.print("Enter the number of elements: ");
         int n = scanner.nextInt();
 
-        System.out.println("Enter the elements:");
-        for (int i = 0; i < n; i++) {
+        System.out.print("Enter the elements:");
+        for (int i = 0; i < n; i++)
             list.add(scanner.nextInt());
-        }
+
 
         System.out.print("Enter k: ");
         int k = scanner.nextInt();
@@ -32,9 +32,9 @@ public class Kth_Smallest_Element_ArrayList {
         try {
             int kthSmallest = findKthSmallest(list, k);
             System.out.println("The " + k + "th smallest element is: " + kthSmallest);
-        } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
-        }
+        } catch (IllegalArgumentException e){
+            System.out.println(e.getMessage());}
+
 
         scanner.close();
     }

@@ -23,9 +23,9 @@ public class WordFrequency_Using_Map {
 
         // Display the frequencies
         System.out.println("\nWord Frequencies (sorted):");
-        for (Map.Entry<String, Integer> entry : wordCount.entrySet()) {
+        for (Map.Entry<String, Integer> entry : wordCount.entrySet())
             System.out.println(entry.getKey() + " -> " + entry.getValue());
-        }
+
 
         scanner.close();
     }

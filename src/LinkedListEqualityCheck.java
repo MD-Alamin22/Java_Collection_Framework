@@ -5,16 +5,16 @@ public class LinkedListEqualityCheck {
         // Check if both lists are null or have the same size and elements
         if (list1 == null || list2 == null) return false;
 
-        if (list1.size() != list2.size()) {
+        if (list1.size() != list2.size())
             return false;
-        }
+
 
         // Compare elements one by one
-        for (int i = 0; i < list1.size(); i++) {
-            if (!list1.get(i).equals(list2.get(i))) {
+        for (int i = 0; i < list1.size(); i++)
+            if (!list1.get(i).equals(list2.get(i)))
                 return false;
-            }
-        }
+
+
 
         return true;
     }
@@ -32,10 +32,10 @@ public class LinkedListEqualityCheck {
         list2.add(20);
         list2.add(40);
 
-        if (areEqual(list1, list2)) {
+        if (areEqual(list1, list2))
             System.out.println("The LinkedLists are equal.");
-        } else {
+         else
             System.out.println("The LinkedLists are not equal.");
-        }
+
     }
 }
